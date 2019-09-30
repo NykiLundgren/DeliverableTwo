@@ -3,21 +3,22 @@
   <head>
     <title>Choosing Outfits</title>
     </head>
-  <body>
-    <script type="text/javascript" src="script.js"></script>
+  <body> 
     <form id="tempF">
       <label>What is today's temperature? </label>
-      <input name="temp" type="text" size="10">
+      <input id="tempFahr" name="tempFahr" type="number" size="10">
     </form>
     <form id="eventType">
       <label for="eventType">Select the event type for today: </label>
-        <select id="type">
+        <select id="clothes">
           <option value="">--Make a choice--</option>
           <option value="casual">Casual</option>
           <option value="semiFormal">Semi-Formal</option>
           <option value="formal">Formal</option>
        </select>
     </form>
+    <script type="text/javascript" src="script.js"></script>
     <button onclick="output()">Submit</button>
+
 </body>
 </html>
