@@ -5,18 +5,19 @@
     </head>
   <body>
     <script type="text/javascript" src="script.js"></script>
-    <form id="temp">
+    <form id="tempF">
       <label>What is today's temperature? </label>
-      <input name="tempFahr" type="text" size="10">
+      <input name="temp" type="text" size="10">
     </form>
-    <label for="eventType">Select the event type for today: </label>
-
-    <select id="type">
-      <option value="">--Make a choice--</option>
-      <option value="casual">Casual</option>
-      <option value="semiFormal">Semi-Formal</option>
-      <option value="formal">Formal</option>
-    </select>
-    <button onclick="outputSuggestion();">Submit</button>
+    <form id="eventType">
+      <label for="eventType">Select the event type for today: </label>
+        <select id="type">
+          <option value="">--Make a choice--</option>
+          <option value="casual">Casual</option>
+          <option value="semiFormal">Semi-Formal</option>
+          <option value="formal">Formal</option>
+       </select>
+    </form>
+    <button onclick="output()">Submit</button>
 </body>
 </html>

@@ -1,12 +1,11 @@
+var eventType=document.querySelector("select");
+var select.addEventListener("change",output());
+
 
 function output(){
-  var eventType=document.querySelector("select");
-  var select.addEventListener("change",output);
+
   var choice = select.value;
-  var tempFahr;
-  var x,y;
-  x=document.getElementById("tempF");
-  y=x.elements["tempFahr"];
+  var tempFahr="0";
   if (choice==="casual" && tempFahr <54){
     var result= tempFahr.concat(" is cold, and your event is ",choice,", you should wear something warm and comfy.");
     console.log(result);
@@ -36,5 +35,5 @@ var result=tempFahr.concat(" is warm, and your event is ",choice,", you should w
     console.log(result);
 } else{
 console.log()
-  }
+}
 }
